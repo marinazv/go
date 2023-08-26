@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/marinazv/go/clase10/internal/producto.go"
+	producto "github.com/marinazv/go/clase10/internal"
 )
 
 const (
@@ -69,7 +69,7 @@ func main() {
 func loadData() []producto.Producto {
 	productos := []producto.Producto{
 		{
-			ID:          1,
+			Id:          1,
 			Name:        "Banana",
 			CodeValue:   "AABBCCC",
 			Quantity:    10,
@@ -78,7 +78,7 @@ func loadData() []producto.Producto {
 			Price:       10.0,
 		},
 		{
-			ID:          2,
+			Id:          2,
 			Name:        "Manzana",
 			CodeValue:   "AABBDDD",
 			Quantity:    5,
@@ -87,7 +87,7 @@ func loadData() []producto.Producto {
 			Price:       5.0,
 		},
 		{
-			ID:          3,
+			Id:          3,
 			Name:        "Pera",
 			CodeValue:   "AAZZZCCC",
 			Quantity:    8,
